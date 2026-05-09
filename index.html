@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himalayan Kitchen - Authentic Nepalese Flavours</title>
+    <meta name="description" content="Authentic Nepalese Flavours in the Heart of Sydney">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Himalayan Kitchen - Authentic Nepalese Flavours">
+    <meta property="og:description" content="Authentic Nepalese Flavours in the Heart of Sydney">
+    <meta property="og:image" content="https://www.himalayankitchen.com.au/hero_interior.png">
+    <meta property="og:url" content="https://www.himalayankitchen.com.au">
+    <meta property="og:type" content="restaurant">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- SEO Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Himalayan Kitchen",
+      "image": "https://www.himalayankitchen.com.au/hero_interior.png",
+      "@id": "",
+      "url": "https://www.himalayankitchen.com.au",
+      "telephone": "(02) 9999 8888",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "134 Parramatta Road",
+        "addressLocality": "Parramatta",
+        "addressRegion": "NSW",
+        "postalCode": "2150",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -33.821,
+        "longitude": 151.0028
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+          "opens": "11:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday", "Saturday"],
+          "opens": "11:00",
+          "closes": "23:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "11:00",
+          "closes": "21:30"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="nav-container top-bar-inner">
+            <span>Call us: (02) 9999 8888 | Open today until 10pm</span>
+            <div class="top-bar-links">
+                <a href="#contact">Find Us</a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">FB</a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">IG</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Himalayan Kitchen</a>
+            <div class="hamburger" aria-label="Menu">☰</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="nav-actions">
+                    <a href="#contact" class="btn btn-primary" style="padding: 8px 16px; margin-left:15px;">Book Now</a>
+                    <a href="#" class="btn btn-secondary"
+                        style="padding: 8px 16px; border-color:var(--primary-red); color:var(--primary-red); background:#FFFFFF;">Order
+                        Online</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home">
+        <div class="hero-content fade-in-section">
+            <p class="hero-label">Welcome to</p>
+            <h1>HIMALAYAN KITCHEN</h1>
+            <p class="hero-tagline">Authentic Nepalese Flavours in the Heart of Sydney</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#contact" class="btn btn-secondary">Book a Table</a>
+            </div>
+            <div class="hero-badges">
+                <span>🍽️ Authentic Recipes</span>
+                <span>🏔️ Nepali Heritage</span>
+                <span>⭐ 5-Star Experience</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Strip -->
+    <section class="about-strip">
+        <p class="fade-in-section">"From the mountains of Nepal to the streets of Sydney — every dish tells a story."
+        </p>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="our-story" class="container fade-in-section"
+        style="display:flex; align-items:center; gap:50px; padding-top:100px;">
+        <div class="story-content" style="flex:1;">
+            <h2 class="section-title" style="text-align:left;">Our Story</h2>
+            <div class="title-underline" style="margin: 15px 0 25px 0;"></div>
+            <p style="color:var(--text-grey); margin-bottom:20px; line-height:1.8;">
+                Founded by two brothers from Kathmandu, Himalayan Kitchen was born out of a deep homesickness for the
+                bustling streets of Thamel and the aroma of street-side Momos.
+            </p>
+            <p style="color:var(--text-grey); margin-bottom:20px; line-height:1.8;">
+                Our mission is simple: to bring the authentic, unfiltered taste of Nepal to Sydney. Every spice is
+                carefully sourced, our dough is hand-kneaded daily, and our curries are slow-cooked to perfection. When
+                you dine with us, you're eating with family.
+            </p>
+            <a href="#contact" class="btn btn-primary">Visit Us Today</a>
+        </div>
+        <div class="story-image" style="flex:1;">
+            <img src="hero_interior.png" alt="Restaurant Interior"
+                style="width:100%; border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,0.1);">
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="container fade-in-section">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="title-underline"></div>
+
+        <div class="menu-tabs">
+            <button class="tab-btn active" data-target="momos">Momos (Dumplings)</button>
+            <button class="tab-btn" data-target="mains">Mains</button>
+            <button class="tab-btn" data-target="drinks">Drinks</button>
+            <button class="tab-btn" data-target="desserts">Desserts</button>
+        </div>
+
+        <!-- Momos Tab -->
+        <div id="momos" class="tab-content active">
+            <div class="menu-item">
+                <img src="momo_dish.png" alt="Steamed Chicken Momo" class="menu-thumbnail"
+                    style="width:80px; height:80px; border-radius:8px; object-fit:cover; margin-right:20px;">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">Steamed Chicken Momo <span class="diet-badge">★ Signature</span></h3>
+                    <p class="menu-item-desc">Tender chicken wrapped in handmade dough, served with tomato chutney</p>
+                </div>
+                <div class="menu-item-price">$14.90</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">Fried Buff Momo</h3>
+                    <p class="menu-item-desc">Buffalo meat momo, pan fried to golden perfection</p>
+                </div>
+                <div class="menu-item-price">$15.90</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">Veg Momo <span class="diet-badge" style="background:#2E7D32;">[V]
+                            Vegan</span></h3>
+                    <p class="menu-item-desc">Fresh seasonal vegetables, herbs and spices</p>
+                </div>
+                <div class="menu-item-price">$13.90</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">C-Momo (Soup)</h3>
+                    <p class="menu-item-desc">Steamed momos in a rich spiced broth</p>
+                </div>
+                <div class="menu-item-price">$16.90</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">Jhol Momo <span class="diet-badge" style="background:#D84315;">[🌶️]
+                            Spicy</span></h3>
+                    <p class="menu-item-desc">Momos drenched in our signature achar sauce</p>
+                </div>
+                <div class="menu-item-price">$17.90</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">Kothey Momo</h3>
+                    <p class="menu-item-desc">Pan-fried on one side, steamed on the other</p>
+                </div>
+                <div class="menu-item-price">$15.90</div>
+            </div>
+        </div>
+
+        <!-- Mains Tab -->
+        <div id="mains" class="tab-content">
+            <div class="menu-item">
+                <img src="dal_bhat_dish.png" alt="Dal Bhat" class="menu-thumbnail"
+                    style="width:80px; height:80px; border-radius:8px; object-fit:cover; margin-right:20px;">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">Dal Bhat <span class="diet-badge">★ Signature</span> <span
+                            class="diet-badge" style="background:#1565C0;">[GF] Gluten-Free</span></h3>
+                    <p class="menu-item-desc">Traditional lentil soup with rice, seasonal vegetables and pickle</p>
+                </div>
+                <div class="menu-item-price">$18.90</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">Chicken Curry</h3>
+                    <p class="menu-item-desc">Slow-cooked Nepali-style chicken in aromatic spices</p>
+                </div>
+                <div class="menu-item-price">$22.90</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">Lamb Sekuwa</h3>
+                    <p class="menu-item-desc">Grilled marinated lamb skewers with mint chutney</p>
+                </div>
+                <div class="menu-item-price">$24.90</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">Gundruk Soup</h3>
+                    <p class="menu-item-desc">Fermented leafy greens in a warming broth</p>
+                </div>
+                <div class="menu-item-price">$14.90</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">Samay Baji</h3>
+                    <p class="menu-item-desc">Traditional Newari platter — beaten rice, beans, egg, meat</p>
+                </div>
+                <div class="menu-item-price">$26.90</div>
+            </div>
+        </div>
+
+        <!-- Drinks Tab -->
+        <div id="drinks" class="tab-content">
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">Masala Chai</h3>
+                    <p class="menu-item-desc">Spiced milk tea, Nepali style</p>
+                </div>
+                <div class="menu-item-price">$5.00</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">Lassi (Mango or Sweet)</h3>
+                    <p class="menu-item-desc">Chilled yoghurt drink</p>
+                </div>
+                <div class="menu-item-price">$7.00</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">Tongba</h3>
+                    <p class="menu-item-desc">Traditional Himalayan millet beer served warm</p>
+                </div>
+                <div class="menu-item-price">$12.00</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">Nimbu Pani</h3>
+                    <p class="menu-item-desc">Fresh lemon water with rock salt</p>
+                </div>
+                <div class="menu-item-price">$5.00</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">Soft Drinks</h3>
+                    <p class="menu-item-desc">Coke, Sprite, Fanta</p>
+                </div>
+                <div class="menu-item-price">$4.00</div>
+            </div>
+        </div>
+
+        <!-- Desserts Tab -->
+        <div id="desserts" class="tab-content">
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">Sel Roti</h3>
+                    <p class="menu-item-desc">Traditional Nepali rice flour doughnut, crispy outside soft inside</p>
+                </div>
+                <div class="menu-item-price">$8.90</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">Kheer</h3>
+                    <p class="menu-item-desc">Creamy rice pudding with cardamom and saffron</p>
+                </div>
+                <div class="menu-item-price">$9.90</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-name">Juju Dhau</h3>
+                    <p class="menu-item-desc">Royal curd from Bhaktapur — creamy and divine</p>
+                </div>
+                <div class="menu-item-price">$8.90</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">A feast for the eyes before the feast for your tastebuds</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600"
+                        alt="Delicious Dumplings" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600"
+                        alt="Authentic Curry" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600"
+                        alt="Nepalese Food" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=600"
+                        alt="Food Spread" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600"
+                        alt="Gourmet Dish" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600"
+                        alt="Fresh Vegetables" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600"
+                        alt="Meat Dish" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600"
+                        alt="Fresh Salad" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"
+                        alt="Rustic Food" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-nav lightbox-prev">&#10094;</span>
+        <span class="lightbox-nav lightbox-next">&#10095;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Fullscreen Image">
+    </div>
+
+    <!-- Events Section -->
+    <section id="events" class="fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Events</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">Good times and great food. Come celebrate with us.</p>
+
+            <div class="events-grid">
+                <!-- Event 1 -->
+                <div class="event-card" data-title="Dashain Celebration Night" data-date="October 12, 2025"
+                    data-desc="Join us for a special Dashain feast with traditional Nepali food, music and cultural performances. Celebrate the biggest festival of Nepal right here in Sydney! The night includes a special authentic buffet set, complimentary welcome drinks, and live folk performances. Perfect for families and friends."
+                    data-img="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=800">
+                    <span class="event-badge">Upcoming</span>
+                    <h3 class="event-title">Dashain Celebration Night</h3>
+                    <div class="event-date">October 12, 2025</div>
+                    <p class="event-desc">Join us for a special Dashain feast with traditional Nepali food, music and
+                        cultural performances.</p>
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="event-card" data-title="Tihar Special Menu" data-date="October 28, 2025"
+                    data-desc="Celebrate the festival of lights with our limited Tihar special menu and free dessert for all dine-in guests. The restaurant will be beautifully decorated with lights and diyas. We will be offering a special thali set and traditional sweets like Sel Roti and Finni."
+                    data-img="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800">
+                    <span class="event-badge">Upcoming</span>
+                    <h3 class="event-title">Tihar Special Menu</h3>
+                    <div class="event-date">October 28, 2025</div>
+                    <p class="event-desc">Celebrate the festival of lights with our limited Tihar special menu and free
+                        dessert for all dine-in guests.</p>
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="event-card" data-title="Live Nepali Music Night" data-date="Every Friday"
+                    data-desc="Enjoy live traditional Nepali music while dining every Friday from 7pm to 10pm. Unwind after a long week with acoustic renditions of classic Nepali hits, accompanied by our signature signature cocktails and authentic dishes. Bookings are highly recommended!"
+                    data-img="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800">
+                    <span class="event-badge" style="background-color: var(--primary-red);">Weekly</span>
+                    <h3 class="event-title">Live Nepali Music Night</h3>
+                    <div class="event-date">Every Friday</div>
+                    <p class="event-desc">Enjoy live traditional Nepali music while dining every Friday from 7pm to
+                        10pm.</p>
+                    <button class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Detail Modal -->
+    <div id="event-modal" class="event-modal">
+        <div class="event-modal-content">
+            <span class="event-modal-close">&times;</span>
+            <img class="event-modal-img" id="event-modal-img" src="" alt="Event Image">
+            <div class="event-modal-body">
+                <h3 class="event-modal-title" id="event-modal-title">Event Title</h3>
+                <div class="event-modal-date" id="event-modal-date">Date</div>
+                <div class="event-modal-desc" id="event-modal-desc">Description</div>
+                <a href="#contact" class="btn btn-primary" onclick="closeEventModal()">Book a Table</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="fade-in-section">
+        <div class="container">
+            <h2 class="section-title">What Our Guests Say</h2>
+            <div class="title-underline"></div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Absolutely the best momos in Sydney! The jhol momo reminded me of home.
+                        Great service and cozy atmosphere."</p>
+                    <div class="review-author">— Aayush M.</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"The Dal Bhat set is incredible. Very authentic taste and generous portions.
+                        Highly recommended for dinner!"</p>
+                    <div class="review-author">— Sarah T.</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Beautiful restaurant with a great vibe. The staff were so welcoming and the
+                        chicken curry was absolutely perfect."</p>
+                    <div class="review-author">— David L.</div>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="https://g.page/review/" target="_blank" class="btn btn-google">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path
+                            d="M12.24 10.285V14.4h6.806c-.275 1.765-2.056 5.174-6.806 5.174-4.095 0-7.439-3.389-7.439-7.574s3.345-7.574 7.439-7.574c2.33 0 3.891.989 4.785 1.849l3.254-3.138C18.189 1.186 15.479 0 12.24 0c-6.635 0-12 5.365-12 12s5.365 12 12 12c6.926 0 11.52-4.869 11.52-11.726 0-.788-.085-1.39-.189-1.989H12.24z" />
+                    </svg>
+                    Review us on Google
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIP Newsletter Section -->
+    <section class="newsletter-section"
+        style="background-color:var(--primary-red); color:#FFFFFF; padding:60px 24px; text-align:center;">
+        <div class="container" style="padding:0;">
+            <h2 style="font-family:var(--font-heading); font-size:36px; margin-bottom:15px;">Join Our VIP Club</h2>
+            <p style="font-size:18px; margin-bottom:30px;">Get a free dessert on your birthday when you join our mailing
+                list!</p>
+            <form style="display:flex; justify-content:center; gap:10px; max-width:500px; margin:0 auto;"
+                onsubmit="event.preventDefault(); alert('Thanks for joining!');">
+                <input type="email" placeholder="Enter your email" required
+                    style="padding:15px; border-radius:4px; border:none; flex:1; font-family:var(--font-body); font-size:16px;">
+                <button type="submit" class="btn btn-secondary"
+                    style="background:#FFFFFF; color:var(--primary-red); border:none; font-weight:700;">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <div class="title-underline"></div>
+
+            <div class="contact-map"
+                style="margin-bottom: 40px; border-radius: 8px; overflow: hidden; height: 400px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.167812976214!2d151.0028!3d-33.821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a3211516e8bf%3A0xc6c4f034032d8804!2s134%20Parramatta%20Rd%2C%20Parramatta%20NSW%202150%2C%20Australia!5e0!3m2!1sen!2sus!4v1683050123456!5m2!1sen!2sus"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Address</h4>
+                            <p>134 Parramatta Road<br>Parramatta NSW 2150</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>(02) 9999 8888</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>hello@himalayankitchen.com.au</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Opening Hours</h4>
+                            <p>Mon–Thu: 11am–10pm<br>Fri–Sat: 11am–11pm<br>Sun: 11am–9:30pm</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" aria-label="X (Twitter)">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="contact-form">
+                    <h3>Make a Reservation</h3>
+                    <form id="booking-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" required>
+                                    <option value="" disabled selected>Select Time</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="11:30 AM">11:30 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="12:30 PM">12:30 PM</option>
+                                    <option value="1:00 PM">1:00 PM</option>
+                                    <option value="1:30 PM">1:30 PM</option>
+                                    <option value="5:30 PM">5:30 PM</option>
+                                    <option value="6:00 PM">6:00 PM</option>
+                                    <option value="6:30 PM">6:30 PM</option>
+                                    <option value="7:00 PM">7:00 PM</option>
+                                    <option value="7:30 PM">7:30 PM</option>
+                                    <option value="8:00 PM">8:00 PM</option>
+                                    <option value="8:30 PM">8:30 PM</option>
+                                    <option value="9:00 PM">9:00 PM</option>
+                                    <option value="9:30 PM">9:30 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" required>
+                                <option value="" disabled selected>Number of Guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                                <option value="7+">7+ People</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Special Requests (Optional)"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">Book My Table</button>
+                    </form>
+                    <div id="form-message">Thank you! We will contact you soon.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col footer-brand">
+                <span class="logo">Himalayan Kitchen</span>
+                <p>Bringing the authentic taste and warm hospitality of Nepal to the heart of Sydney. Every dish tells a
+                    story.</p>
+                <div class="social-links" style="margin-top: 20px;">
+                    <a href="https://facebook.com" target="_blank"
+                        style="background: rgba(255,255,255,0.1); color: white;"><svg width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg></a>
+                    <a href="https://instagram.com" target="_blank"
+                        style="background: rgba(255,255,255,0.1); color: white;"><svg width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg></a>
+                    <a href="https://twitter.com" target="_blank"
+                        style="background: rgba(255,255,255,0.1); color: white;"><svg width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </svg></a>
+                    <a href="https://tiktok.com" target="_blank"
+                        style="background: rgba(255,255,255,0.1); color: white;"><svg width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z">
+                            </path>
+                        </svg></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Our Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#events">Upcoming Events</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <ul class="hours-list">
+                    <li><span>Mon - Thu</span> <span>11am - 10pm</span></li>
+                    <li><span>Fri - Sat</span> <span>11am - 11pm</span></li>
+                    <li><span>Sunday</span> <span>11am - 9:30pm</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2025 Himalayan Kitchen. All rights reserved. | Designed with ❤️ for the Nepali community in
+            Australia.
+            <div class="legal-links">
+                <a href="privacy-policy.html">Privacy Policy</a> |
+                <a href="terms-conditions.html">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
